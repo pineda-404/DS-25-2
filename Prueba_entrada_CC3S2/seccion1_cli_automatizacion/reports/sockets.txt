@@ -40,4 +40,5 @@ tcp   LISTEN 0      4096                                [::1]:631           [::]
 tcp   LISTEN 0      511                                  [::]:80            [::]:*   
 tcp   LISTEN 0      5                                    [::]:902           [::]:*   
 
-Riesgos (editar): Puertos abiertos innecesarios pueden ...
+Riesgos (editar): Puertos abiertos innecesarios pueden aumentar innecesariamente la superficie de ataque. Cada puerto que se encuentre en estado LISTEN es una
+potencial puerta de entrada.
