@@ -1,0 +1,15 @@
+curl -I example.com
+HTTP/2 200 
+content-type: text/html
+etag: "84238dfc8092e5d9c0dac8ef93371a07:1736799080.121134"
+last-modified: Mon, 13 Jan 2025 20:11:20 GMT
+cache-control: max-age=86000
+date: Tue, 09 Sep 2025 00:26:25 GMT
+alt-svc: h3=":443"; ma=93600
+
+Explicación (editar): Código HTTP 200 significa que entablamos una comunicacion exitosa con el servidor de example.com.
+- El /2 en HTTP/2 nos indica que usamos la version 2 del protocolo HTTP
+- date nos muestra la fecha y hora(adelantada 5hrs respecto a Peru, ya que somos GMT-5) a la que hicimos la peticion al servidor.
+- alt-svc nos muestra que era posible usar la version 3 del protocolo HTTP en el puerto 443
+
+

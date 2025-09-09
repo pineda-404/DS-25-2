@@ -1,0 +1,43 @@
+ss -tuln
+Netid State  Recv-Q Send-Q                      Local Address:Port  Peer Address:Port
+udp   UNCONN 0      0                              127.0.0.54:53         0.0.0.0:*   
+udp   UNCONN 0      0                           127.0.0.53%lo:53         0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:57621      0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:1900       0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:1900       0.0.0.0:*   
+udp   UNCONN 0      0                              172.17.0.1:3702       0.0.0.0:*   
+udp   UNCONN 0      0                         239.255.255.250:3702       0.0.0.0:*   
+udp   UNCONN 0      0                           192.168.0.160:3702       0.0.0.0:*   
+udp   UNCONN 0      0                         239.255.255.250:3702       0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:54349      0.0.0.0:*   
+udp   UNCONN 0      0                             224.0.0.251:5353       0.0.0.0:*   
+udp   UNCONN 0      0                             224.0.0.251:5353       0.0.0.0:*   
+udp   UNCONN 0      0                             224.0.0.251:5353       0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:5353       0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:5353       0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:5353       0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:38251      0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:46920      0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:47520      0.0.0.0:*   
+udp   UNCONN 0      0                                 0.0.0.0:48008      0.0.0.0:*   
+udp   UNCONN 0      0      [fe80::85f1:d008:ca19:fd38]%wlp4s0:546           [::]:*   
+udp   UNCONN 0      0                                    [::]:58276         [::]:*   
+udp   UNCONN 0      0                                       *:50748            *:*   
+udp   UNCONN 0      0      [fe80::85f1:d008:ca19:fd38]%wlp4s0:3702          [::]:*   
+udp   UNCONN 0      0                        [ff02::c]%wlp4s0:3702          [::]:*   
+udp   UNCONN 0      0                                    [::]:5353          [::]:*   
+udp   UNCONN 0      0                                    [::]:5353          [::]:*   
+udp   UNCONN 0      0                                    [::]:5353          [::]:*   
+tcp   LISTEN 0      4096                              0.0.0.0:34225      0.0.0.0:*   
+tcp   LISTEN 0      10                                0.0.0.0:57621      0.0.0.0:*   
+tcp   LISTEN 0      511                               0.0.0.0:443        0.0.0.0:*   
+tcp   LISTEN 0      511                               0.0.0.0:80         0.0.0.0:*   
+tcp   LISTEN 0      5                                 0.0.0.0:902        0.0.0.0:*   
+tcp   LISTEN 0      4096                            127.0.0.1:631        0.0.0.0:*   
+tcp   LISTEN 0      4096                           127.0.0.54:53         0.0.0.0:*   
+tcp   LISTEN 0      4096                        127.0.0.53%lo:53         0.0.0.0:*   
+tcp   LISTEN 0      4096                                [::1]:631           [::]:*   
+tcp   LISTEN 0      511                                  [::]:80            [::]:*   
+tcp   LISTEN 0      5                                    [::]:902           [::]:*   
+
+Riesgos (editar): Puertos abiertos innecesarios pueden ...
