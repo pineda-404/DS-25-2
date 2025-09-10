@@ -1,0 +1,13 @@
+# Entornos virtuales
+prueba-ent/
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Archivos de reporte de cobertura
+.coverage
+
+# Archivos de configuración de editores
+.obsidian/
+.vscode/
