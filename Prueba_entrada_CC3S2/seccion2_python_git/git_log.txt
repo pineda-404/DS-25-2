@@ -1,1 +1,16 @@
-# Genera este archivo con: git log --oneline --graph --decorate --all
+* bccdb23 (HEAD -> feature/agrega-imagen) agrega capturas del grafo de los commits
+* df9ad12 (main) agrega coverage.txt
+*   b18a194 Merge branch 'chore/create-gitinit'
+|\  
+| * 7784b48 (chore/create-gitinit) agrega captura en /imagenes
+| * c742b5d agrega .gitignore
+* | 7968f8d corrige app/app.py
+|/  
+* 54a7c73 implementa test/test_app.py y responde seccion 2.3
+* ec2b824 implementa summarize y el CLI
+* f7fc422 (origin/main) completa la seccion 1
+* 2239a11 termina los reportes de http.txt y dns.txt
+* aa8a357 Estructura prueba de entrada
+* 51881e6 Desarrolla secciones conceptuales desde 4.1 a 4.3
+* ab95d89 Estructura de actividad 1
+* d435c32 Initial commit
