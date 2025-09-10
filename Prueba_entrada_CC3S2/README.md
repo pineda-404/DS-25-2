@@ -20,4 +20,12 @@ Los 4 archivos .txt fueron analizados y se completo las respuestas.
 
 # Sección 2
 
+### Seccion 2.3: Flujo Git
+
+- **Merge Fast-Forward (FF):** Es el merge mas simple de todos, ocurre cuando fusionamos una rama que está directamente por delante de la rama destino. En lugar de crear un commit de merge, git simplemente mueve el puntero de la rama destino hacia adelante
+
+- **Rebase:** Este comando reescribe la historia. Toma los commits de una rama y los vuelve a aplicar sobre el ultimo commit de otra rama. El resultado es también un historial lineal, como si todo el trabajo se hubiera hecho en serie
+
+- **Cherry-pick:** Es una herramienta que nos permite copiar un único commit específico de una rama a otra. Es muy útil para aplicar un parche(hotfix) a una rama de producción sin tener que fusionar toda la rama de desarrollo que contiene otras funcionalidades que aun no se han completado
+
 # Sección 3

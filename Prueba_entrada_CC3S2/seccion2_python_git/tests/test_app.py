@@ -1,20 +1,20 @@
 import pytest
 from app.app import summarize
 
-@pytest.fixture
-def sample():
-    return ["1", "2", "3"]
 
-def test_ok(sample):
-    # Arrange–Act–Assert
-    # Act
-    with pytest.raises(NotImplementedError):
-        summarize(sample)
+def test_summarize_ok():
+    nums = ["1", "2", "3"]
+    resultado = summarize(nums)
+    assert resultado["count"] == 3
+    assert resultado["sum"] == 6.0
+    assert resultado["avg"] == 2.0
 
-def test_empty():
-    with pytest.raises(Exception):
+
+def test_summarize_lista_vacia():
+    with pytest.raises(ValueError):
         summarize([])
 
-def test_non_numeric():
-    with pytest.raises(Exception):
-        summarize(["a", "2"])
+
+def test_summarize_con_no_numericos():
+    with pytest.raises(ValueError):
+        summarize(["1", "a", "3"])
