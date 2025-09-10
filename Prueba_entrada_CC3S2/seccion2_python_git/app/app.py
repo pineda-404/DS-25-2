@@ -16,9 +16,9 @@ def summarize(nums):  # TODO: tipado opcional
         except:
             raise ValueError(f"La lista nums contiene un elemento no numerico: {item}")
     count = len(numeros)
-    total = sum(numeros)
-    avg = total / count
-    return {"count": count, "sum": sum, "avg": avg}
+    total_sum = sum(numeros)
+    avg = total_sum / count
+    return {"count": count, "sum": total_sum, "avg": avg}
 
 
 if __name__ == "__main__":
