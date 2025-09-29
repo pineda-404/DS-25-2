@@ -1,0 +1,6 @@
+Linux 404 6.11.0-29-generic #29-Ubuntu SMP PREEMPT_DYNAMIC Fri Jun 13 20:29:41 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+Python 3.12.7
+GNU Make 4.3
+tar (GNU tar) 1.35
+ShellCheck - shell script analysis tool
+3.8.0
