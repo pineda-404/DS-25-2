@@ -1,9 +1,13 @@
 ## Preguntas
 
 - ¿Cómo te ha ayudado Git a mantener un historial claro y organizado de tus cambios?
+  Git me ha ayudado mucho a mantener un historial ordenado gracias a comandos como `git log`, que no solo muestra el mensaje asociado sino que tambien muesta la fecha y hora de cada commit. Esto me permite entender el propósito de cada cambio y seguir la evolución del proyecto. Además, con `git status` y `git branch` puedo saber en qué punto exacto estoy trabajando y cómo se relaciona con otras ramas, lo que me da una visión clara del progreso y evita confusiones.
 - ¿Qué beneficios ves en el uso de ramas para desarrollar nuevas características o corregir errores?
+  El principal beneficio es que puedo partir de una versión estable del proyecto y crear una rama independiente para trabajar en una nueva funcionalidad o corrección. Esto me permite experimentar y hacer cambios sin afectar el código principal. Si algo sale mal, simplemente descarto la rama sin comprometer la estabilidad del proyecto. Además, facilita el trabajo en equipo, ya que cada desarrollador puede trabajar en su propia rama sin interferir con los demás como ya venimos haciendo desde la PC1.
 - Realiza una revisión final del historial de commits para asegurarte de que todos los cambios se han registrado correctamente.
+  Para asegurarme de que todo está en orden, uso `git status` para confirmar que no hay archivos pendientes en el área de staging. Luego, con `git log`, reviso que todos los commits estén registrados y que los mensajes sean entendibles y descriptivos. Esto me da la seguridad de que el historial refleja correctamente el trabajo realizado.
 - Revisa el uso de ramas y merges para ver cómo Git maneja múltiples líneas de desarrollo.
+  Con el comando `git log --graph --oneline --all`, puedo visualizar de forma gráfica cómo se han creado y fusionado las ramas. Esto me ha ayudado a entender mejor la estructura del proyecto, identificar los merges y ver cómo se han integrado diferentes líneas de desarrollo.
 
 ## Ejercicios
 
@@ -14,6 +18,7 @@
 **Instrucciones:**
 
 1.  **Crear una nueva rama para una característica:**
+
     - Crea una nueva rama llamada `feature/advanced-feature` desde la rama `main`:
 
            ```bash
@@ -24,6 +29,7 @@
       ![](imagenes/1.1.png)
 
 2.  **Modificar archivos en la nueva rama:**
+
     - Edita el archivo `main.py` para incluir una función adicional:
 
       ```python
@@ -43,6 +49,7 @@
       ![](imagenes/1.2.png)
 
 3.  **Simular un desarrollo paralelo en la rama main:**
+
     - Cambia de nuevo a la rama `main`:
 
       ```bash
@@ -63,6 +70,7 @@
       ![](imagenes/1.3.png)
 
 4.  **Intentar fusionar la rama feature/advanced-feature en main:**
+
     - Fusiona la rama `feature/advanced-feature` en `main`:
 
       ```bash
@@ -72,6 +80,7 @@
       ![](imagenes/1.4.png)
 
 5.  **Resolver el conflicto de fusión:**
+
     - Git generará un conflicto en `main.py`. Abre el archivo y resuelve el conflicto manualmente, eligiendo cómo combinar las dos versiones.
     - Después de resolver el conflicto, añade el archivo resuelto y completa la fusión:
 
@@ -83,6 +92,7 @@
       ![](imagenes/1.5.png)
 
 6.  **Eliminar la rama fusionada:**
+
     - Una vez que hayas fusionado con éxito y resuelto los conflictos, elimina la rama `feature/advanced-feature`:
 
       ```bash
@@ -98,6 +108,7 @@
 **Instrucciones:**
 
 1. **Ver el historial detallado de commits:**
+
    - Usa el comando `git log` para explorar el historial de commits, pero esta vez con más detalle:
 
      ```bash
@@ -109,6 +120,7 @@
      ![](imagenes/2.1.png)
 
 2. **Filtrar commits por autor:**
+
    - Usa el siguiente comando para mostrar solo los commits realizados por un autor específico:
 
      ```bash
@@ -118,6 +130,7 @@
      ![](imagenes/2.2.png)
 
 3. **Revertir un commit:**
+
    - Imagina que el commit más reciente en `main.py` no debería haberse hecho. Usa `git revert` para revertir ese commit:
 
      ```bash
@@ -129,6 +142,7 @@
      ![](imagenes/2.3.png)
 
 4. **Rebase interactivo:**
+
    - Realiza un rebase interactivo para combinar varios commits en uno solo. Esto es útil para limpiar el historial de commits antes de una fusión.
    - Usa el siguiente comando para empezar el rebase interactivo:
 
@@ -141,6 +155,7 @@
      ![](imagenes/2.4.png)
 
 5. **Visualización gráfica del historial:**
+
    - Usa el siguiente comando para ver una representación gráfica del historial de commits:
 
      ```bash
@@ -158,6 +173,7 @@
 **Instrucciones:**
 
 1. **Crear una nueva rama desde un commit específico:**
+
    - Usa el historial de commits (`git log --oneline`) para identificar un commit antiguo desde el cual crear una nueva rama:
 
      ```bash
@@ -174,6 +190,7 @@
      ![](imagenes/3.1.png)
 
 2. **Modificar y confirmar cambios en la nueva rama:**
+
    - Realiza algunas modificaciones en `main.py` que simulen una corrección de errores:
      ```python
      def greet():
@@ -189,6 +206,7 @@
      ![](imagenes/3.2.png)
 
 3. **Fusionar los cambios en la rama principal:**
+
    - Cambia de nuevo a la rama `main` y fusiona la rama `bugfix/rollback-feature`:
 
      ```bash
@@ -199,6 +217,7 @@
      ![](imagenes/3.3.png)
 
 4. **Explorar el historial después de la fusión:**
+
    - Usa `git log` y `git log --graph` para ver cómo se ha integrado el commit en el historial:
 
      ```bash
@@ -208,6 +227,7 @@
      ![](imagenes/3.4.png)
 
 5. **Eliminar la rama bugfix/rollback-feature:**
+
    - Una vez fusionados los cambios, elimina la rama `bugfix/rollback-feature`:
 
      ```bash
@@ -223,6 +243,7 @@
 **Instrucciones:**
 
 1. **Hacer cambios en el archivo main.py:**
+
    - Edita el archivo `main.py` para introducir un nuevo cambio:
 
      ````python
@@ -239,6 +260,7 @@
      ![](imagenes/4.1.png)
 
 2. **Usar git reset para deshacer el commit:**
+
    - Deshaz el commit utilizando `git reset` para volver al estado anterior:
 
      ```bash
@@ -250,6 +272,7 @@
      ![](imagenes/4.2.png)
 
 3. **Usar git restore para deshacer cambios no confirmados:**
+
    - Realiza un cambio en `README.md` y no lo confirmes:
 
      ```bash
@@ -274,6 +297,7 @@
 **Instrucciones:**
 
 1. **Crear un nuevo repositorio remoto:**
+
    - Usa GitHub o GitLab para crear un nuevo repositorio remoto y clónalo localmente:
 
      ```bash
@@ -283,6 +307,7 @@
      ![](imagenes/5.1.png)
 
 2. **Crear una nueva rama para desarrollo de una característica:**
+
    - En tu repositorio local, crea una nueva rama `feature/team-feature`:
 
      ```bash
@@ -293,6 +318,7 @@
      ![](imagenes/5.2.png)
 
 3. **Realizar cambios y enviar la rama al repositorio remoto:**
+
    - Realiza cambios en los archivos del proyecto y confírmalos:
 
      ```bash
@@ -310,18 +336,21 @@
      ![](imagenes/5.3.png)
 
 4. **Abrir un Pull Request:**
+
    - Abre un Pull Request (PR) en la plataforma remota (GitHub/GitLab) para fusionar `feature/team-feature` con la rama `main`.
    - Añade una descripción detallada del PR, explicando los cambios realizados y su propósito.
 
      ![](imagenes/5.4.png)
 
 5. **Revisar y fusionar el Pull Request:**
+
    - Simula la revisión de código, comenta en el PR y realiza cualquier cambio necesario basado en la retroalimentación.
    - Una vez aprobado, fusiona el PR en la rama `main`.
 
      ![](imagenes/5.5.png)
 
 6. **Eliminar la rama remota y local:**
+
    - Después de la fusión, elimina la rama tanto local como remotamente:
 
      ```bash
@@ -338,6 +367,7 @@
 **Instrucciones:**
 
 1. **Hacer cambios en main.py y confirmarlos:**
+
    - Realiza y confirma varios cambios en `main.py` en la rama `main`:
 
      ```bash
@@ -349,6 +379,7 @@
      ![](imagenes/6.1.png)
 
 2. **Crear una nueva rama y aplicar el commit específico:**
+
    - Crea una nueva rama `feature/cherry-pick` y aplícale el commit específico:
 
      ```bash
@@ -360,6 +391,7 @@
      ![](imagenes/6.2.png)
 
 3. **Guardar temporalmente cambios no confirmados:**
+
    - Realiza algunos cambios en `main.py` pero no los confirmes:
 
      ```bash
@@ -376,6 +408,7 @@
      ![](imagenes/6.3.png)
 
 4. **Aplicar los cambios guardados:**
+
    - Realiza otros cambios y confírmalos si es necesario.
    - Luego, recupera los cambios guardados anteriormente:
 
@@ -386,6 +419,7 @@
      ![](imagenes/6.4.png)
 
 5. **Revisar el historial y confirmar la correcta aplicación de los cambios:**
+
    - Usa `git log` para revisar el historial de commits y verificar que todos los cambios se han aplicado correctamente.
 
      ![](imagenes/6.5.png)
