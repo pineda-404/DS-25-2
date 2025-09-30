@@ -1,5 +1,5 @@
 def greet():
-    print("Hello como una función avanzada")
+    print("Error corregido en la función")
 
 
 greet()
