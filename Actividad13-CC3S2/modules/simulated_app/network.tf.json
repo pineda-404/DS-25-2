@@ -6,7 +6,7 @@
                 {
                     "type": "string",
                     "default": "new-hello-world",
-                    "description": "Nombre del servidor local"
+                    "description": "Nuevo nombre del servidor local"
                 }
             ]
         },
