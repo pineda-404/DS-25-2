@@ -21,20 +21,20 @@ __pycache__/
 build/
 dist/
 *.egg-info/
-*.egg Archivos de estado de Terraform (contienen el estado de la infraestructura y posibles secretos)
+*.egg Archivos de estado de Terraform 
 *.tfstate
 *.tfstate.backup
 
-# Archivos de variables (a menudo contienen secretos y valores específicos del entorno)
+# Archivos de variables 
 *.tfvars
 *.tfvars.json
 
-# Directorio local de Terraform (contiene binarios de providers y módulos)
+# Directorio local de Terraform 
 .terraform/
 
 # Logs de errores
 crash.log
 crash.*.log
 
-# Archivos de plan (pueden contener valores sensibles)
+# Archivos de plan 
 *.tfplan

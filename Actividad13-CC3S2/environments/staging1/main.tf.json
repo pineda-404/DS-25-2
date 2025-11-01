@@ -1,0 +1,27 @@
+{
+    "resource": [
+        {
+            "null_resource": [
+                {
+                    "local_server": [
+                        {
+                            "provisioner": [
+                                {
+                                    "local-exec": {
+                                        "command": "echo 'Arrancando servidor ${var.name} en red ${var.network} y puerto ${var.port} con api_key ${var.api_key}'"
+                                    }
+                                }
+                            ],
+                            "triggers": {
+                                "api_key": "${var.api_key}",
+                                "name": "${var.name}",
+                                "network": "${var.network}",
+                                "port": "${var.port}"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
