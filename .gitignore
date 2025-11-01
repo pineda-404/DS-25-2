@@ -1,0 +1,40 @@
+## Entornos virtuales
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Archivos de variables de entorno 
+.env
+.env.*
+
+# Bytecode y caches de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Distribución / Paquetes
+build/
+dist/
+*.egg-info/
+*.egg Archivos de estado de Terraform (contienen el estado de la infraestructura y posibles secretos)
+*.tfstate
+*.tfstate.backup
+
+# Archivos de variables (a menudo contienen secretos y valores específicos del entorno)
+*.tfvars
+*.tfvars.json
+
+# Directorio local de Terraform (contiene binarios de providers y módulos)
+.terraform/
+
+# Logs de errores
+crash.log
+crash.*.log
+
+# Archivos de plan (pueden contener valores sensibles)
+*.tfplan
