@@ -1,0 +1,7 @@
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+2025-11-22 15:20:29,940 - INFO - microservice - Arrancando la aplicación
+2025-11-22 15:20:29,941 - INFO - microservice - Inicializando base de datos en app.db
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     172.17.0.1:46656 - "GET /api/items/ HTTP/1.1" 200 OK

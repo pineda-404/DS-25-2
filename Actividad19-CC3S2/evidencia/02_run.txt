@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE                        COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+6cf38d0e0675   ejemplo-microservice:0.1.0   "uvicorn microservic…"   45 seconds ago   Up 45 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   ejemplo-ms

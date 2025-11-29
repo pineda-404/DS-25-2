@@ -1,0 +1,50 @@
+docker build -t ejemplo-microservice:0.1.0 .
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.16kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim
+#2 DONE 1.4s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 257B done
+#3 DONE 0.0s
+
+#4 [builder 1/4] FROM docker.io/library/python:3.12-slim@sha256:b43ff04d5df04ad5cabb80890b7ef74e8410e3395b19af970dcd52d7a4bff921
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 925B done
+#5 DONE 0.0s
+
+#6 [builder 2/4] WORKDIR /build
+#6 CACHED
+
+#7 [builder 4/4] RUN pip install --user --no-cache-dir -r requirements.txt
+#7 CACHED
+
+#8 [production 3/6] WORKDIR /app
+#8 CACHED
+
+#9 [builder 3/4] COPY requirements.txt .
+#9 CACHED
+
+#10 [production 4/6] COPY --from=builder /root/.local /home/appuser/.local
+#10 CACHED
+
+#11 [production 5/6] COPY . /app
+#11 CACHED
+
+#12 [production 2/6] RUN groupadd -r appuser     && useradd -m -r -g appuser appuser
+#12 CACHED
+
+#13 [production 6/6] RUN chown -R appuser:appuser /app
+#13 CACHED
+
+#14 exporting to image
+#14 exporting layers done
+#14 writing image sha256:147d98ffcfeec633ebf2dd801c372d5db847a968e95c765706ea6d935caf1f6c done
+#14 naming to docker.io/library/ejemplo-microservice:0.1.0 done
+#14 DONE 0.0s
